@@ -1,0 +1,310 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #10131b;
+  color: #f1f2f6;
+}
+
+.pagina {
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 680px;
+}
+
+.cabecalho {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.logo {
+  width: 52px;
+  height: 52px;
+  background: #7965e8;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0 auto 22px;
+}
+
+.subtitulo {
+  color: #9584f5;
+  font-size: 11px;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+.cabecalho h1 {
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+.cabecalho h1 span {
+  color: #9584f5;
+}
+
+.descricao {
+  color: #9296a5;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.painel {
+  background: #1a1e29;
+  border: 1px solid #292e3c;
+  border-radius: 18px;
+  padding: 28px;
+}
+
+.resumo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.resumo-titulo {
+  color: #9296a5;
+  font-size: 13px;
+  margin-bottom: 7px;
+}
+
+.resumo h2 {
+  font-size: 32px;
+}
+
+.estatisticas {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 12px;
+  color: #b5b8c5;
+}
+
+.estatistica {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bolinha {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.pendente {
+  background: #e8b45d;
+}
+
+.concluida {
+  background: #55c995;
+}
+
+.formulario {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.formulario input {
+  flex: 1;
+  min-width: 0;
+  padding: 15px;
+  border: 1px solid #343a4a;
+  border-radius: 9px;
+  background: #11151f;
+  color: white;
+  outline: none;
+  font-size: 13px;
+}
+
+.formulario input:focus {
+  border-color: #7965e8;
+}
+
+.formulario button {
+  background: #7965e8;
+  color: white;
+  border: none;
+  padding: 0 18px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.formulario button:hover {
+  background: #8c79f5;
+}
+
+.filtros {
+  display: flex;
+  gap: 8px;
+  border-bottom: 1px solid #303545;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.filtros button {
+  background: transparent;
+  color: #9296a5;
+  border: none;
+  padding: 9px 13px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.filtros button.ativo {
+  background: #302a50;
+  color: #b8aaff;
+}
+
+.filtros button:hover {
+  color: white;
+}
+
+.lista-tarefas {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 180px;
+}
+
+.tarefa {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  background: #222735;
+  border: 1px solid #303747;
+  padding: 15px;
+  border-radius: 9px;
+}
+
+.botao-concluir {
+  width: 21px;
+  height: 21px;
+  flex-shrink: 0;
+  border: 2px solid #7771a9;
+  border-radius: 50%;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.texto-tarefa {
+  flex: 1;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.finalizada .botao-concluir {
+  background: #55c995;
+  border-color: #55c995;
+}
+
+.finalizada .texto-tarefa {
+  color: #777f90;
+  text-decoration: line-through;
+}
+
+.botao-excluir {
+  background: transparent;
+  border: none;
+  color: #858b9b;
+  font-size: 17px;
+  cursor: pointer;
+  padding: 3px;
+}
+
+.botao-excluir:hover {
+  color: #ff7373;
+}
+
+.vazio {
+  text-align: center;
+  padding: 35px 10px;
+}
+
+.icone-vazio {
+  font-size: 30px;
+  color: #7965e8;
+  margin-bottom: 13px;
+}
+
+.vazio h3 {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.vazio p {
+  color: #9296a5;
+  font-size: 12px;
+}
+
+.rodape {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border-top: 1px solid #303545;
+  padding-top: 18px;
+  margin-top: 15px;
+  color: #858b9b;
+  font-size: 11px;
+}
+
+.creditos {
+  text-align: center;
+  color: #656b7b;
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-top: 25px;
+}
+
+@media (max-width: 500px) {
+  .pagina {
+    padding: 35px 14px;
+  }
+
+  .cabecalho h1 {
+    font-size: 30px;
+  }
+
+  .painel {
+    padding: 18px;
+  }
+
+  .formulario {
+    flex-direction: column;
+  }
+
+  .formulario button {
+    padding: 14px;
+  }
+
+  .filtros {
+    gap: 3px;
+  }
+
+  .filtros button {
+    padding: 9px 10px;
+  }
+
+  .rodape {
+    flex-direction: column;
+  }
+}
